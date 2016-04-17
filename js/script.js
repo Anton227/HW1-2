@@ -1,8 +1,8 @@
-alert('hello');
+//vars declaration
 var arr = fillArray();
 var userName = prompt('input user name');
-checkArray(arr, userName);
 
+//functions declaration
 function fillArray(){
 	var arr = [];
 	for ( var i = 0; i < 5; i++){		
@@ -22,8 +22,10 @@ function checkArray(arr, userName){
 			break;
 		}
 	}
-
 	if ( !corectName) {
 		alert( userName + ', input fail');
 	}
 }
+
+//functions do
+checkArray(arr, userName);
